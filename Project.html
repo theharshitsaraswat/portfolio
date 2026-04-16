@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="Project.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Pre Loader  -->
+    <div id="preloader">
+        <img src="1.png" alt="Logo" class="logo-loader">
+    </div>
+
+    <!-- Nav baar -->
+    <nav>
+        <div class="left">
+            <img src="Gemini_Generated_Image_wkft5owkft5owkft-removebg-preview.png">
+        </div>
+        <div class="right">
+            <ul>
+                <a href="/index.html">
+                    <li>HOME</li>
+                </a>
+                <a href="About.html">
+                    <li>ABOUT</li>
+                </a>
+                <a href="Project.html">
+                    <li>PROJECT</li>
+                </a>
+                <a href="Contact.html">
+                    <li>CONTACT ME</li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="projects">
+
+        <h1 class="project-title">My Projects</h1>
+
+        <div class="projects-container">
+
+            <div class="project-card">
+                <div class="project-img">Calculator</div>
+                <div class="project-content">
+                    <h3>Calculator</h3>
+                    <p>A responsive calculator built using HTML, CSS and JavaScript.</p>
+                    <span>HTML • CSS • JavaScript</span>
+
+
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img">Age Calculator</div>
+                <div class="project-content">
+                    <h3>Age Calculator</h3>
+                    <p>A simple tool to calculate age from date of birth.</p>
+                    <span>HTML • CSS • JavaScript</span>
+
+
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img">Portfolio Website</div>
+                <div class="project-content">
+                    <h3>Portfolio Website</h3>
+                    <p>A modern personal portfolio website with animations and responsive design.</p>
+                    <span>HTML • CSS • JavaScript</span>
+
+
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img">Jodhpur Cab Clone</div>
+                <div class="project-content">
+                    <h3>Jodhpur Cab Clone</h3>
+                    <p>A cab booking website clone with modern UI and smooth layout.</p>
+                    <span>HTML • CSS • JavaScript</span>
+
+
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img">Osmosis Computer Clone</div>
+                <div class="project-content">
+                    <h3>Osmosis Computer Clone</h3>
+                    <p>A responsive business website clone with attractive sections.</p>
+                    <span>HTML • CSS • JavaScript</span>
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <!-- LEFT -->
+            <div class="footer-left">
+                <img src="1.png" class="footer-logo">
+
+                <p>Full Stack Web Developer <br> BCA Student</p>
+
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/harshit-saraswat-3a7b58387/"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/theharshitsaraswat/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/919680025050"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <!-- CENTER -->
+            <div class="footer-center">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="/About.html">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="Project.html">Projects</a></li>
+                </ul>
+            </div>
+
+            <!-- RIGHT -->
+            <div class="footer-right">
+                <h3>Contact Me</h3>
+
+                <p><i class="fa-solid fa-envelope"></i> harshitsaraswat2@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 9680025050</p>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="footer-bottom">
+            © 2026 Harshit Saraswat | All Rights Reserved
+        </div>
+
+    </footer>
+
+
+    <script> window.addEventListener("load", function () {
+            const preloader = document.getElementById("preloader");
+
+            // Minimum time (e.g. 3 seconds)
+            setTimeout(() => {
+                preloader.classList.add("fade-out");
+
+                setTimeout(() => {
+                    preloader.style.display = "none";
+                }, 500);
+
+            }, 1500); // 2000ms = 2 seconds
+        });
+        const projectCards = document.querySelectorAll(".project-card");
+
+        const projectObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                }
+            });
+        }, {
+            threshold: 0.2
+        });
+
+        projectCards.forEach(card => {
+            projectObserver.observe(card);
+        });
+
+    </script>
+
+</body>
+
+</html>

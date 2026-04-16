@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="Contact.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Pre Loader  -->
+    <div id="preloader">
+        <img src="1.png" alt="Logo" class="logo-loader">
+    </div>
+
+    <!-- Nav baar -->
+    <nav>
+        <div class="left">
+            <img src="Gemini_Generated_Image_wkft5owkft5owkft-removebg-preview.png">
+        </div>
+        <div class="right">
+            <ul>
+                <a href="/index.html">
+                    <li>HOME</li>
+                </a>
+                <a href="About.html">
+                    <li>ABOUT</li>
+                </a>
+                <a href="Project.html">
+                    <li>PROJECT</li>
+                </a>
+                <a href="Contact.html">
+                    <li>CONTACT ME</li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+    <section class="contact">
+
+        <h1 class="contact-title">Contact Me</h1>
+    
+        <div class="contact-container">
+    
+            <!-- LEFT SIDE -->
+            <div class="contact-left">
+                <h2>Let's Connect 👋</h2>
+                <p>
+                    Have a project idea or want to work together?  
+                    Feel free to reach out — I'd love to connect!
+                </p>
+    
+                <div class="contact-info">
+                    <p><i class="fa-solid fa-envelope"></i> harshitsaraswat2@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 9680025050</p>
+                    <p>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <a href="https://www.google.com/maps/search/Jodhpur,+Rajasthan,+India"
+                           target="_blank">
+                           Jodhpur, Rajasthan, India
+                        </a>
+                      </p>
+                </div>
+    
+                <div class="contact-social">
+                    <a href="https://www.linkedin.com/in/harshit-saraswat-3a7b58387/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/theharshitsaraswat/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/919680025050"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+    
+            <!-- RIGHT SIDE FORM -->
+            <div class="contact-right">
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="text" placeholder="Subject">
+                    <textarea rows="6" placeholder="Your Message"></textarea>
+    
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+    
+        </div>
+    
+    </section>
+
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <!-- LEFT -->
+            <div class="footer-left">
+                <img src="1.png" class="footer-logo">
+
+                <p>Full Stack Web Developer <br> BCA Student</p>
+
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/harshit-saraswat-3a7b58387/"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/theharshitsaraswat/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/919680025050"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <!-- CENTER -->
+            <div class="footer-center">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="/About.html">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="Project.html">Projects</a></li>
+                </ul>
+            </div>
+
+            <!-- RIGHT -->
+            <div class="footer-right">
+                <h3>Contact Me</h3>
+
+                <p><i class="fa-solid fa-envelope"></i> harshitsaraswat2@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 9680025050</p>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="footer-bottom">
+            © 2026 Harshit Saraswat | All Rights Reserved
+        </div>
+
+    </footer>
+
+    <script> window.addEventListener("load", function () {
+        const preloader = document.getElementById("preloader");
+
+        // Minimum time (e.g. 3 seconds)
+        setTimeout(() => {
+            preloader.classList.add("fade-out");
+
+            setTimeout(() => {
+                preloader.style.display = "none";
+            }, 500);
+
+        }, 1500); // 2000ms = 2 seconds
+    });
+    const contactSection = document.querySelector(".contact");
+
+    const contactObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+            }
+        });
+    }, {
+        threshold: 0.2
+    });
+
+    contactObserver.observe(contactSection);
+</script>
+</body>
+
+</html>

@@ -1,0 +1,416 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(0, 0, 33);
+    color: white;
+
+}
+
+body {
+    overflow-x: hidden;
+}
+
+nav {
+    height: 70px;
+    width: 100%;
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.left {
+    height: 100%;
+    width: 60%;
+}
+
+.left img {
+    height: 100%;
+}
+
+.right {
+    display: flex;
+    color: black;
+    background-color: transparent;
+    height: 100%;
+    width: 30%;
+}
+
+.right ul {
+    display: flex;
+    justify-content: center;
+}
+
+.right ul li {
+    list-style: none;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+.right a {
+    text-decoration: none;
+    color: black;
+}
+
+.right a:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+    color: brown
+}
+
+/* ================= CONTACT PAGE ================= */
+
+.contact {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.contact-title {
+    font-size: 40px;
+    margin-bottom: 50px;
+    background: linear-gradient(to right, #ff512f, #a774ed);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.contact-container {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+}
+
+/* LEFT */
+.contact-left {
+    width: 45%;
+    text-align: left;
+}
+
+.contact-left h2 {
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.contact-left p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* CONTACT INFO */
+.contact-info p {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.contact-info i {
+    color: #ff512f;
+    margin-right: 10px;
+}
+
+/* SOCIAL ICONS */
+.contact-social {
+    margin-top: 20px;
+}
+
+.contact-social a {
+    font-size: 22px;
+    color: white;
+    margin-right: 20px;
+    transition: 0.3s;
+}
+
+.contact-social a:hover {
+    color: #ff512f;
+    transform: scale(1.3);
+    text-shadow: 0 0 10px #ff512f, 0 0 20px #a774ed;
+}
+
+/* RIGHT FORM */
+.contact-right {
+    width: 50%;
+}
+
+.contact-right form {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.contact-right input,
+.contact-right textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.08);
+    color: white;
+}
+
+.contact-right input::placeholder,
+.contact-right textarea::placeholder {
+    color: #ccc;
+}
+
+/* BUTTON */
+.contact-right button {
+    padding: 14px 30px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to right, #ff512f, #a774ed);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-right button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 81, 47, 0.5);
+}
+.contact {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+}
+
+.contact.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ================= FOOTER ================= */
+
+.footer {
+    background: #0a0a23;
+    padding: 50px 20px 20px;
+    color: white;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: auto;
+}
+
+/* LEFT */
+.footer-left {
+    max-width: 300px;
+}
+
+.footer-logo {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.footer-left p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* SOCIAL ICONS */
+.social-icons a {
+    margin-right: 15px;
+    font-size: 20px;
+    color: white;
+    transition: 0.3s;
+}
+
+/* 🔥 Hover Glow Effect */
+.social-icons a:hover {
+    color: #ff512f;
+    transform: scale(1.3);
+    text-shadow: 0 0 10px #ff512f, 0 0 20px #a774ed;
+}
+
+/* CENTER */
+.footer-center h3 {
+    margin-bottom: 15px;
+}
+
+.footer-center ul {
+    list-style: none;
+}
+
+.footer-center ul li {
+    margin-bottom: 10px;
+}
+
+.footer-center ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.footer-center ul li a:hover {
+    color: #ff512f;
+    padding-left: 5px;
+}
+
+/* RIGHT */
+.footer-right h3 {
+    margin-bottom: 15px;
+}
+
+.footer-right p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer-right i {
+    margin-right: 10px;
+    color: #ff512f;
+}
+
+/* LINE */
+.footer hr {
+    margin: 30px auto;
+    width: 85%;
+    border: 0.5px solid gray;
+}
+
+/* BOTTOM */
+.footer-bottom {
+    text-align: center;
+    font-size: 14px;
+    color: gray;
+}
+.contact-info a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contact-info a:hover {
+    color: #ff512f;
+    text-shadow: 0 0 10px #ff512f;
+}
+
+
+/* Pre loader */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    /* change to your brand color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.logo-loader {
+    width: 120px;
+    animation: logoAnim 1.5s ease-in-out infinite;
+}
+
+@keyframes logoAnim {
+    0% {
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+}
+
+/* Fade out effect */
+#preloader.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+
+@media (max-width: 992px) {
+
+    /* NAVBAR */
+    nav {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .left {
+        width: 100%;
+        text-align: center;
+    }
+
+    .left img {
+        height: 50px;
+    }
+
+    .right {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .right ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .right ul li {
+        margin: 10px 15px;
+    }
+
+    /* FOOTER */
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .footer-left,
+    .footer-center,
+    .footer-right {
+        max-width: 100%;
+    }
+
+    .footer-logo {
+        width: 100px;
+    }
+    .contact-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-left,
+    .contact-right {
+        width: 100%;
+    }
+
+    .contact-left {
+        text-align: center;
+    }
+
+    .contact-title {
+        font-size: 30px;
+    }
+
+    .contact-left h2 {
+        font-size: 24px;
+    }
+}
