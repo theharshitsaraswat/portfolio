@@ -104,8 +104,15 @@ html {
     line-height: 1.6;
     margin-bottom: 20px;
 }
+.fa-instagram {
+    color: #E1306C;
+}
 
-/* CONTACT INFO */
+.fa-linkedin {
+    color: #0077b5;
+}
+
+CONTACT INFO
 .contact-info p {
     margin-bottom: 15px;
     font-size: 16px;
@@ -342,6 +349,58 @@ html {
     transition: opacity 0.5s ease;
 }
 
+.contact-section {
+    padding: 60px 10%;
+    text-align: center;
+    color: white;
+}
+
+.contact-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* CARD */
+.contact-card {
+    background: rgba(255,255,255,0.05);
+    padding: 30px;
+    border-radius: 15px;
+    width: 250px;
+    transition: 0.3s;
+    backdrop-filter: blur(10px);
+}
+
+/* ICON */
+.contact-card i {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #ff512f;
+}
+
+/* HOVER */
+.contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(255,81,47,0.5);
+}
+
+/* BUTTON */
+.contact-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    background: linear-gradient(45deg, #ff512f, #dd2476);
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contact-card a:hover {
+    transform: scale(1.1);
+}
+
 
 @media (max-width: 992px) {
 
@@ -412,5 +471,11 @@ html {
 
     .contact-left h2 {
         font-size: 24px;
+    }
+}
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
     }
 }

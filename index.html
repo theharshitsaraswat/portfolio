@@ -12,13 +12,49 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+
     <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
+    <div id="particles-js">
+        <div class="header">
+            <h1>
+                <span class="site-title">HARSHIT SARASWAT</span>
+                <span class="site-description">Programmer • Web Developer </span>
+            </h1>
+            <div class="header-icons">
+                <a aria-label="My LinkedIn Profile" target="_blank"
+                    href="https://www.linkedin.com/in/harshit-saraswat-3a7b58387/">
+                    <i class="icon fa-brands fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a aria-label="My Instagram Profile" target="_blank"
+                    href="https://www.instagram.com/theharshitsaraswat/">
+                    <i class="icon fa-brands fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a aria-label="My Résumé" target="_blank" href="resume.pdf">
+                    <i class="icon fa-solid fa-file-pdf" aria-hidden="true"></i>
+                </a>
+                <a aria-label="Send Email" href="mailto:harshitsaraswat2@gmail.com" target="_blank"><i
+                        class="icon fa-solid fa-envelope""></i></a>
+                <a aria-label=" WhatsApp" target="_blank"
+                        href="https://wa.me/919680025050?text=Hello%20Harshit%2C%20I%20visited%20your%20portfolio">
+
+                        <i class="icon fa-brands fa-whatsapp"></i>
+
+                </a>
+            </div>
+            <div class="header-links">
+                <a class="link" href="#right" data-scroll>HOME</a>
+            </div>
+        </div>
+        <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
+    </div>
     <!-- Pre Loader  -->
     <div id="preloader">
         <img src="1.png" alt="Logo" class="logo-loader">
@@ -29,7 +65,7 @@
         <div class="left">
             <img src="Gemini_Generated_Image_wkft5owkft5owkft-removebg-preview.png">
         </div>
-        <div class="right">
+        <div id="right">
             <ul>
                 <a href="index.html">
                     <li>HOME</li>
@@ -64,6 +100,7 @@
 
         </div>
     </section>
+    <!-- Previous image Flaticon website se li thi -->
     <hr style="margin-top: 100px;">
     <section class="skills" id="skills">
         <h1 class="skill-title">My Skills</h1>
@@ -71,12 +108,12 @@
         <div class="skills-container">
 
             <div class="skill-card">
-                <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png">
+                <img src="https://cdn-icons-gif.flaticon.com/18534/18534792.gif">
                 <h3>HTML</h3>
             </div>
 
             <div class="skill-card">
-                <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png">
+                <img src="https://cdn-icons-gif.flaticon.com/11237/11237468.gif">
                 <h3>CSS</h3>
             </div>
 
@@ -86,7 +123,7 @@
             </div>
 
             <div class="skill-card">
-                <img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png">
+                <img src="https://cdn-icons-gif.flaticon.com/19035/19035229.gif">
                 <h3>React</h3>
             </div>
 
@@ -96,7 +133,7 @@
             </div>
 
             <div class="skill-card">
-                <img src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png">
+                <img src="https://cdn-icons-gif.flaticon.com/18925/18925197.gif">
                 <h3>C++</h3>
             </div>
 
@@ -111,16 +148,15 @@
             </div>
 
             <div class="skill-card">
-                <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png">
+                <img src="https://cdn-icons-gif.flaticon.com/17122/17122780.gif">
                 <h3>Java</h3>
             </div>
             <div class="skill-card">
-                <img
-                    src="https://cdn-icons-png.flaticon.com/128/5968/5968322.png">
+                <img src="https://cdn-icons-png.flaticon.com/128/5968/5968322.png">
                 <h3>Node.js</h3>
             </div>
             <div class="skill-card">
-                <img src="https://cdn-icons-png.flaticon.com/128/1602/1602309.png">
+                <img src="https://cdn-icons-gif.flaticon.com/11784/11784642.gif">
                 <h3>MongoDB</h3>
             </div>
 
@@ -177,15 +213,141 @@
 
     <!-- JS -->
     <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <!-- particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script>
-        var typed = new Typed('#element', {
-            strings: ['BCA Student', 'FULL-STACK Developer'],
-            typeSpeed: 150,
+
+        /* ================= PARTICLES ================= */
+
+        particlesJS("particles-js", {
+            particles: {
+                number: {
+                    value: 80,
+                    density: {
+                        enable: true,
+                        value_area: 800
+                    }
+                },
+
+                color: {
+                    value: ["#7c3aed", "#ec4899", "#06b6d4"]
+                },
+
+                shape: {
+                    type: "circle"
+                },
+
+                opacity: {
+                    value: 0.5
+                },
+
+                size: {
+                    value: 3,
+                    random: true
+                },
+
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: "#7c3aed",
+                    opacity: 0.4,
+                    width: 1
+                },
+
+                move: {
+                    enable: true,
+                    speed: 2,
+                    direction: "none",
+                    random: false,
+                    straight: false,
+                    out_mode: "out"
+                }
+            },
+
+            interactivity: {
+                detect_on: "canvas",
+
+                events: {
+                    onhover: {
+                        enable: true,
+                        mode: "grab"
+                    },
+
+                    onclick: {
+                        enable: true,
+                        mode: "push"
+                    }
+                },
+
+                modes: {
+                    grab: {
+                        distance: 180,
+                        line_linked: {
+                            opacity: 1
+                        }
+                    },
+
+                    push: {
+                        particles_nb: 4
+                    }
+                }
+            },
+
+            retina_detect: true
         });
-        var typed = new Typed('#elementt', {
-            strings: [' HARSHIT SARASWAT'],
-            typeSpeed: 150,
+
+
+        /* ================= TYPED JS ON SCROLL ================= */
+
+        let typingStarted = false;
+
+        const heroSection = document.querySelector(".First");
+
+        const typeObserver = new IntersectionObserver((entries) => {
+
+            entries.forEach(entry => {
+
+                if (entry.isIntersecting && !typingStarted) {
+
+                    typingStarted = true;
+
+                    new Typed('#element', {
+                        strings: ['BCA Student', 'FULL-STACK Developer'],
+                        typeSpeed: 120,
+                        backSpeed: 50,
+                        loop: true
+                    });
+
+                    new Typed('#elementt', {
+                        strings: ['HARSHIT SARASWAT'],
+                        typeSpeed: 200
+                    });
+
+                }
+
+            });
+
+        }, {
+            threshold: 0.4
         });
+
+        typeObserver.observe(heroSection);
+
+
+
+
+
+
+
+
+        // var typed = new Typed('#element', {
+        //     strings: ['BCA Student', 'FULL-STACK Developer'],
+        //     typeSpeed: 150,
+        // });
+        // var typed = new Typed('#elementt', {
+        //     strings: [' HARSHIT SARASWAT'],
+        //     typeSpeed: 150,
+        // });
         const cards = document.querySelectorAll(".skill-card");
 
         const observer = new IntersectionObserver((entries) => {
